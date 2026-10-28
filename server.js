@@ -7,8 +7,8 @@ const app = express();
 // app.use(express.static(__dirname)) #style
 app.use(express.urlencoded({extended:true}))
 
-mongoose.connect("mongodb://localhost:27017/form")
-const db = mongoose.connection
+mongoose.connect("mongodb+srv://yatharthsahu0157:Yatharth157@formdata.8aa9xjx.mongodb.net/")   //mongodb://localhost:27017/form
+const db = mongoose.connection  
 db.once('open',()=>{
     console.log("mongodb connected");
 })
